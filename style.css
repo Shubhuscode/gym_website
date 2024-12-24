@@ -86,3 +86,19 @@ header nav a {
     border-radius: 5px;
     width: 250px;
 }
+
+/* Contact Section */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
