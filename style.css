@@ -39,3 +39,50 @@ header nav a {
     color: #fff;
     text-decoration: none;
 }
+
+
+/* Hero Section */
+.hero {
+    background: url('gym-hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+#about, #services, #contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#services .services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
