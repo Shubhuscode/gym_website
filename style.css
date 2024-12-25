@@ -118,6 +118,39 @@ header nav a:hover {
     line-height: 1.8;
 }
 
+   /* Portfolio Section */
+    #portfolio {
+        padding: 60px 30px;
+    }
+
+    #portfolio h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .portfolio-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .portfolio-item {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+
 /* Services Section */
 #services {
     padding: 60px 30px;
