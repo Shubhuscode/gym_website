@@ -308,3 +308,70 @@
     footer a:hover {
         text-decoration: underline;
     }
+
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #portfolio h2 {
+        font-size: 30px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    #services h2 {
+        font-size: 30px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    form input, form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
