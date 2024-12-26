@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gym Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1 class="logo">FitLife Gym</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Transform Your Body, Transform Your Life</h2>
+                <p>Join FitLife Gym today for a healthier tomorrow!</p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>FitLife Gym is your ultimate fitness destination. We offer state-of-the-art equipment, experienced trainers, and a welcoming community.</p>
+            </div>
+        </section>
+
+         <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item" style="background-image: url('03_gallery.jpg');"></div>
+                <div class="portfolio-item" style="background-image: url('04_gallery.jpg');"></div>
+                <div class="portfolio-item" style="background-image: url('01_gallery.jpg');"></div>
+                <div class="portfolio-item" style="background-image: url('08_gallery.jpg');"></div>
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2>Our Packages</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Basic Package</h3>
+                        <p>Access to gym facilities and group classes.</p>
+                        <p class="price">Fee: <span>$30/month</span></p>
+                        <button class="btn">Subscribe</button>
+                    </div>
+                    <div class="service">
+                        <h3>Premium Package</h3>
+                        <p>Includes personal training sessions and nutrition plans.</p>
+                        <p class="price">Fee: <span>$50/month</span></p>
+                        <button class="btn">Subscribe</button>
+                    </div>
+                    <div class="service">
+                        <h3>Elite Package</h3>
+                        <p>All-inclusive access with exclusive benefits and 24/7 support.</p>
+                        <p class="price">Fee: <span>$80/month</span></p>
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
     
 </body>
 </html>
