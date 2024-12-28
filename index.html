@@ -82,15 +82,13 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form action="#">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="mailto:your-email@example.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn" id="submitBtn">Send Message</button>
+            </form>
         </section>
 
 
@@ -100,6 +98,39 @@
             <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Add SweetAlert2 library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript for Form Validation and SweetAlert -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();  
+            
+            // Basic Validation
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            
+            if (!name || !email || !message) {
+            
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'All fields are required!'
+                });
+            } else {
+                
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Your message has been sent successfully!',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
+            }
+        });
+    </script>
     
     
 </body>
